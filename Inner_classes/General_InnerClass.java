@@ -21,13 +21,12 @@ public class General_InnerClass{
         public void Method3(){
             System.out.println("Iam from the static inner class");
         }
+        public static void Method4(){
+            System.out.println("Iam from the static method in the static inner class");
+        }
     }
-
-}
-
-class Main{
-    public static void main(String args[]){
-        //create an object of the outer class
+    public static void main(String[] args) {
+       //create an object of the outer class
         General_InnerClass outer = new General_InnerClass();
         outer.Method1();
         //create an object of the non static inner class using the outer object
@@ -36,5 +35,10 @@ class Main{
         //creating an object of the static inner class
         General_InnerClass.Inner inn = new General_InnerClass.Inner();
         inn.Method3();
-    }
+        
+        //call the static method in the static inner class
+        General_InnerClass.Inner.Method4();
+    } 
+    
 }
+
