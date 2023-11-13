@@ -1,4 +1,4 @@
-package Generic_Programming;
+
 
 public class Person <T, U>{
     T name;
@@ -18,6 +18,8 @@ public class Person <T, U>{
         Person<String, Integer> person = new Person<String,Integer>("Willy", 12);
         System.out.println("Name: "+ person.getName());
         System.out.println("Age: "+ person.getAge());
+
+        Person <Double, Integer> p2 = new Person<Double,Integer>(12.1, 12);
 
     }
 }

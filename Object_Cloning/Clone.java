@@ -31,7 +31,7 @@ public class Clone implements Cloneable {
            //cloning is internally like deep copying
         }
         catch (CloneNotSupportedException e){
-            e.printStackTrace();
+           
         }
     }
 }

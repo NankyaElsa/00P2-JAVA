@@ -30,7 +30,7 @@ public class Shallow {
         //lets try to change the attribute values of the coppie object
         copy.name = "John";
 
-        System.out.println(original);//[Alex, 18]
+        System.out.println(original);//expect [Alex, 18]
         System.out.println(copy);//[John, 18]===actual output
 
         //test shallow cloning
